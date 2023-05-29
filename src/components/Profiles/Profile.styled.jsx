@@ -6,13 +6,13 @@ export const Card = styled.div`
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
-	margin: 0 auto 40px;
-	padding: 16px;
+	padding: 16px 0 0;
+	margin: 40px auto;
 	max-width: 100%;
 	width: 300px;
 	border-radius: 8px;
-	box-shadow: -1px -1px 1px #fff, 1px 1px 1px #d0ccd0;
-	background-color: #f6ebfc;
+	box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	background-color: #f7f2fa;
 `;
 
 export const Description = styled.div`
@@ -52,13 +52,13 @@ export const Location = styled(Info)`
 
 export const StatsList = styled.ul`
 	display: flex;
-	gap: 10px;
 	justify-content: center;
 	align-items: center;
-	padding: 16px;
 	width: 100%;
-	/* background-color: rgb(218, 213, 213);
-	border-top: 1px solid #c1bebe; */
+	background-color: rgb(218, 213, 213);
+	border-top: 1px solid #c1bebe;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
 `;
 
 export const StatsItem = styled.li`
@@ -67,8 +67,10 @@ export const StatsItem = styled.li`
 	justify-content: center;
 	flex-direction: column;
 	width: 100%;
-:not(:last-child) {
-	border-right: 1px solid rgb(62, 61, 61);
+	padding:20px;
+
+	:not(:last-child) {
+	border-right: 1px solid #c1bebe;
 }
 `;
 
